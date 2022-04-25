@@ -25,7 +25,15 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  display: flex; /*set the display CSS properly of the parent container to flex*/
+  flex-direction: row; /* or column */
 }
 
 .item {
+  flex: 1;
+  margin: 10px;
+}
+.item-double {
+  flex: 2;
+  border-style: solid;
 }

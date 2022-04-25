@@ -24,8 +24,9 @@ h3 {
 
 .group {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 100px;
+  flex-direction: column;
+  border: 1px solid red;
+  margin-bottom: 100px; /*also is affected section margin in this case*/
 }
 
 .item {
@@ -35,4 +36,15 @@ h3 {
 
 .item-double {
   flex: 2;
+}
+
+/* Groups & Items (Desktop) */ 
+@media all and (min-width: 800px) {
+  section,
+  h1 {
+    padding: 0 10%; /* the right/left paddings are now x% with respect to the screen*/
+  }
+  .group {
+    flex-direction: row;
+  }
 }

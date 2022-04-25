@@ -52,15 +52,15 @@ main h2 {
 }
 
 .self-flex-start {
-  align-self: flex-start;
+  align-self:auto
 }
 
 .self-flex-end {
-  align-self: flex-end;
+  align-self: stretch;
 }
 
 .self-center {
-  align-self: center;
+  align-self: stretch;
 }
 
 /* Font-Awesome Icon */
